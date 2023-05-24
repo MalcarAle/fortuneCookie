@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+.hide {
+  display: none;
+}
+body {
+  background: linear-gradient(45deg, #190361 0%, #bb00ff 100%);
+  animation: gradient 10s ease infinite;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+}
+
+p,
+button {
+  font-family: "DM Sans", sans-serif;
+}
+
+main {
+  background: #ffffff;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+
+  padding: 4.8rem 6.4rem 6.4rem;
+  width: min(42.8rem, 90%);
+
+  text-align: center;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: #34355b;
+}
+p {
+  color: #34355b;
+  line-height: 2rem;
+  margin-top: 0.5rem;
+}
+
+/* SCREEN 1 */
+
+#fortuneCookie {
+  background-image: url("assets/biscoito.png");
+  width: 30rem;
+  height: 20rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 2rem 3rem 0 0;
+}
+
+#fortuneCookie:hover {
+  cursor: pointer;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+/* SCREEN 2*/
+
+.screen2 p {
+  font-family: "Dancing Script", sans-serif;
+  line-height: 4rem;
+  font-size: 2.4rem;
+  padding: 1rem;
+
+  margin-top: 1.7rem;
+  background: #e4edf1;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+
+  animation: downtop 2.4s;
+}
+
+.crackedCookie {
+  width: 30rem;
+  height: 20rem;
+  background-image: url("assets/opened-cookie.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-top: 2.5rem;
+}
+
+button {
+  display: grid;
+  background-color: #ff9500;
+  color: white;
+  font-weight: bold;
+  padding: 1.6rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin: 1.7rem auto 0;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: #da850f;
+}
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(10.5rem) scale(0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
